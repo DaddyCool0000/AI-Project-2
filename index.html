@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shopping Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">AI Shopping Assistant</a>
+            <div class="status" id="status">Ready to help you shop!</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat with your Shopping Assistant</h2>
+            </div>
+            <div class="chat-log" id="chat-log"></div>
+            <div class="controls">
+                <button id="start-btn">
+                    <i class="fas fa-microphone"></i> Start Talking
+                </button>
+                <button id="stop-speech-btn" disabled>
+                    <i class="fas fa-stop"></i> Stop
+                </button>
+            </div>
+        </div>
+
+        <aside class="wishlist-section">
+            <div class="wishlist-header">
+                <h3><i class="fas fa-heart"></i> Wishlist</h3>
+                <span class="wishlist-count" id="wishlist-count">0 items</span>
+            </div>
+            <div class="wishlist-items" id="wishlist-items">
+                <div class="empty-wishlist">Your wishlist is empty</div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 AI Shopping Assistant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
